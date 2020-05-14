@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa; }
+
+.container {
+  max-width: 1440px;
+  text-align: center; }
+  .container .header {
+    padding-top: 46px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    .container .header .header__title,
+    .container .header .header__subtitle {
+      font-size: 34px;
+      margin: 0; }
+    .container .header .header__title {
+      font-weight: 200;
+      color: #a3a5ae; }
+    .container .header .header__subtitle {
+      font-weight: 600; }
+  .container .description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 100;
+    color: #a3a5ae;
+    font-weight: 400; }
+    @media (min-width: 769px) {
+      .container .description {
+        max-width: calc(1095px / 2); } }
+  .container .card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1220px; }
+    .container .card__wrapper .card {
+      position: relative;
+      background-color: #fff;
+      width: 350px;
+      height: 300px;
+      text-align: left;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin: 18px; }
+      .container .card__wrapper .card img {
+        position: absolute;
+        bottom: 30px;
+        right: 30px; }
+    .container .card__wrapper .card__title {
+      font-weight: 900;
+      font-size: 20px;
+      color: #4c4e61;
+      padding-bottom: 12px; }
+    .container .card__wrapper .card__description {
+      color: #a3a5ae; }
+    .container .card__wrapper .card--supervisor {
+      border-top: 5px solid #45d3d3;
+      transform: translateY(50%);
+      order: 1; }
+      @media (max-width: 1170px) {
+        .container .card__wrapper .card--supervisor {
+          transform: translateY(0); } }
+    .container .card__wrapper .card--team-builder {
+      border-top: 5px solid #ea5353;
+      order: 2; }
+    .container .card__wrapper .card--calculator {
+      border-top: 5px solid #549ef2;
+      transform: translateY(50%);
+      order: 3; }
+      @media (max-width: 1170px) {
+        .container .card__wrapper .card--calculator {
+          transform: translateY(0); } }
+      @media (max-width: 768px) {
+        .container .card__wrapper .card--calculator {
+          order: 4; } }
+    .container .card__wrapper .card--karma {
+      border-top: 5px solid #fcaf4a;
+      order: 4; }
+      @media (max-width: 768px) {
+        .container .card__wrapper .card--karma {
+          order: 3; } }

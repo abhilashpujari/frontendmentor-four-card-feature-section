@@ -3,13 +3,16 @@
     "version": "1.0.0",
     "description": "Frontend Mentor challenge",
     "main": "index.js",
+    "homepage": "https://abhilashpujari.github.io/frontendmentor-four-card-feature-section/",
     "scripts": {
         "build-css": "node-sass --include-path scss scss/style.scss public/css/style.css",
-        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+        "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+        "deploy": "gh-pages -d dist"
     },
     "author": "Abhilash Pujari",
     "license": "MIT",
     "devDependencies": {
+        "gh-pages": "^2.2.0",
         "node-sass": "^4.14.1",
         "nodemon": "^2.0.3"
     }
